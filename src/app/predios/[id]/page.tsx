@@ -1,5 +1,4 @@
 import Link from "next/link"
-import Image from "next/image"
 import { ArrowLeftIcon } from "@heroicons/react/24/outline"
 import { notFound } from "next/navigation"
 import prediosData from "@/data/predios.json"

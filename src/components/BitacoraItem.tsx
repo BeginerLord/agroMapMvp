@@ -1,5 +1,6 @@
 import dayjs from "dayjs"
 import "dayjs/locale/es"
+import Image from "next/image"
 
 // Configurar dayjs en español
 dayjs.locale("es")
@@ -21,10 +22,12 @@ export default function BitacoraItem({ fechaISO, actividad, comentario, foto }: 
     <div className="flex items-center gap-4 bg-white border-l-4 border-primary rounded-r-xl p-4 shadow-sm hover:shadow-md transition-shadow duration-200">
       {/* Imagen a la izquierda */}
       <div className="flex-shrink-0">
-        <img
+        <Image
           src={foto || "/placeholder.svg"}
           alt={actividad}
-          className="w-24 h-24 rounded-lg object-cover border border-gray-200"
+          width={96}
+          height={96}
+          className="rounded-lg object-cover border border-gray-200"
         />
       </div>
 
