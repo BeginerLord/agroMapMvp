@@ -1,0 +1,35 @@
+[
+  {
+    "id": "1",
+    "nombre": "Predio Martinez",
+    "descripcion": "Predio dedicado al cultivo de maíz y yuca, con sistema de riego tecnificado y buenas prácticas agrícolas.",
+    "ubicacion": {
+      "lat": 8.879202,
+      "lng": -75.767344
+    },
+    "imagen": "/martinez4.jpeg?height=512&width=1278",
+    "imagen2": "/yuca 1.jpg?height=512&width=1278",
+    "galeria": [
+      "/yuca 1.jpg",
+      "/yuca 2.jpg",
+      "/yucamar.jpg"
+    ]
+  },
+  {
+    "id": "2",
+    "nombre": " Mateo Gómez",
+    "descripcion": "Predio dedicado al cultivo de yuca, con sistema de riego tecnificado y buenas prácticas agrícolas.",
+    "ubicacion": {
+      "lat": 8.844100,
+      "lng": -75.830719
+    },
+    "imagen": "/iconmateo.jpeg",
+    "imagen2": "/meteo5.jpg",
+    "galeria": [
+      "mateo1.jpg",
+      "mateo2.jpg",
+      "mateo3.jpg"
+    ]
+  }
+]
+

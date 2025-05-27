@@ -53,7 +53,7 @@ export default function GaleriaImagenes({ images }: GaleriaImagenesProps) {
           <div key={index} className="break-inside-avoid cursor-pointer group" onClick={() => openLightbox(index)}>
             <div className="relative overflow-hidden rounded-2xl bg-white border border-primary-light shadow-sm hover:shadow-md transition-all duration-300">
               <Image
-                src={image || "/placeholder.svg"}
+                src={image.startsWith('/') ? image : `/${image}` || "/placeholder.svg"}
                 alt={`Imagen ${index + 1} del predio`}
                 width={400}
                 height={300}
@@ -97,7 +97,9 @@ export default function GaleriaImagenes({ images }: GaleriaImagenesProps) {
           {/* Imagen ampliada */}
           <div className="relative max-w-4xl max-h-full" onClick={(e) => e.stopPropagation()}>
             <Image
-              src={images[currentImageIndex] || "/placeholder.svg"}
+              src={(images[currentImageIndex]?.startsWith('/') 
+                ? images[currentImageIndex] 
+                : `/${images[currentImageIndex]}`) || "/placeholder.svg"}
               alt={`Imagen ${currentImageIndex + 1} del predio`}
               width={800}
               height={600}

@@ -1,0 +1,69 @@
+
+[
+  {
+    "id": "1",
+    "predioId": "1",
+    "fechaISO": "2024-12-15T08:30:00Z",
+    "actividad": "Siembra de yuca",
+    "comentario": "Se realizó la siembra de yuca en 2.5 hectáreas del sector norte del predio. Las condiciones climáticas fueron favorables, con humedad adecuada del suelo y temperatura óptima. Se utilizó semilla certificada de yuca resistente a plagas.",
+    "foto": "/siembra-de-yuca.jpg?height=96&width=96&text=Siembra"
+  },
+  {
+    "id": "2",
+    "predioId": "1",
+    "fechaISO": "2024-12-10T14:15:00Z",
+    "actividad": "Aplicación de fertilizante orgánico",
+    "comentario": "Aplicación de 500 kg de compost orgánico elaborado en la finca, específicamente formulado para el cultivo de yuca. La distribución fue homogénea para garantizar una nutrición equilibrada en toda el área sembrada.",
+    "foto": "/aplicando-fertilizante.jpg?height=96&width=96&text=Fertilizante"
+  },
+  {
+    "id": "3",
+    "predioId": "1",
+    "fechaISO": "2024-11-28T10:15:00Z",
+    "actividad": "Análisis de suelo",
+    "comentario": "Se tomaron muestras en 8 puntos del predio para evaluar las condiciones del suelo antes de sembrar yuca. Se analizaron pH, niveles de materia orgánica y nutrientes específicos requeridos por el cultivo de yuca.",
+    "foto": "/analisis-suelo.jpg?height=96&width=96&text=Análisis"
+  },
+  {
+    "id": "4",
+    "predioId": "1",
+    "fechaISO": "2024-12-05T06:45:00Z",
+    "actividad": "Preparación y arado del terreno",
+    "comentario": "Se realizó un arado profundo y nivelación del terreno destinado al cultivo de yuca. Se eliminaron malezas y se mejoró la estructura del suelo para una adecuada aireación y drenaje.",
+    "foto": "/preparacion-arado.jpg?height=96&width=96&text=Arado"
+  },
+  {
+    "id": "5",
+    "predioId": "2",
+    "fechaISO": "2024-12-14T07:00:00Z",
+    "actividad": "Cosecha de yuca",
+    "comentario": "Se dio inicio a la cosecha de yuca en el lote principal de 4 hectáreas. El rendimiento estimado fue de 12 toneladas por hectárea, con raíces de buen tamaño y alta calidad, superando las expectativas iniciales.",
+    "foto": "/cosecha-yuca.jpg?height=96&width=96&text=Cosecha"
+  },
+  {
+    "id": "6",
+    "predioId": "2",
+    "fechaISO": "2024-12-08T16:20:00Z",
+    "actividad": "Control biológico en cultivo de yuca",
+    "comentario": "Se aplicó control biológico utilizando enemigos naturales para el manejo de plagas en el cultivo de yuca. Se liberaron insectos benéficos para combatir mosca blanca y otros insectos dañinos, reduciendo el uso de químicos.",
+    "foto": "/control-biologico.jpg?height=96&width=96&text=Control"
+  },
+  {
+    "id": "7",
+    "predioId": "2",
+    "fechaISO": "2024-11-25T12:40:00Z",
+    "actividad": "Mantenimiento de canales de riego para yuca",
+    "comentario": "Se realizaron labores de limpieza y reparación de 800 metros lineales de canales de riego en las áreas sembradas con yuca. Se removió sedimento y se repararon compuertas, mejorando la eficiencia del sistema de riego.",
+    "foto": "/mantenimiento-canal.jpg?height=96&width=96&text=Canales"
+  },
+  {
+    "id": "8",
+    "predioId": "2",
+    "fechaISO": "2024-11-20T12:40:00Z",
+    "actividad": "Deshierbe manual en cultivo de yuca",
+    "comentario": "Se realizó el deshierbe manual en las hileras del cultivo de yuca para evitar la competencia por nutrientes y mejorar la aireación del suelo. Esta labor permitió optimizar el desarrollo de las plantas y prevenir enfermedades asociadas a malezas.",
+    "foto": "/deshierbe.jpg?height=96&width=96&text=Deshierbe"
+  }
+]
+
+
