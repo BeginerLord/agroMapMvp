@@ -69,12 +69,6 @@ export default function PredioPage({ params }: PredioPageProps) {
           Volver a predios
         </Link>
       </div>
-
-<<<<<<< HEAD
-=======
-
-      {/* Información del predio */}
->>>>>>> richarddev
       <div className="mb-8">
         <h1 className="text-4xl font-bold text-primary mt-6 mb-4">{predio.nombre}</h1>
         <p className="text-slate-700 text-lg leading-relaxed mb-6">{predio.descripcion}</p>
