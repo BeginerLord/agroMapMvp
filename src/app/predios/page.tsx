@@ -1,0 +1,37 @@
+import PredioCard from "@/components/PredioCard"
+import prediosData from "@/data/predios.json"
+
+export const metadata = {
+  title: "Predios Registrados - AgroMap MVP",
+  description: "Listado de predios agrícolas registrados en el sistema AgroMap",
+}
+
+export default function PrediosPage() {
+  return (
+    <div className="py-8">
+      {/* Título principal */}
+      <h1 className="text-3xl font-semibold text-primary mb-8 text-center">Predios registrados</h1>
+
+      {/* Grid de predios */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {prediosData.map((predio) => (
+          <PredioCard
+            key={predio.id}
+            id={predio.id}
+            nombre={predio.nombre}
+            descripcion={predio.descripcion}
+            imagen={predio.imagen}
+            ubicacion={predio.ubicacion}
+          />
+        ))}
+      </div>
+
+      {/* Mensaje si no hay predios */}
+      {prediosData.length === 0 && (
+        <div className="text-center py-12">
+          <p className="text-slate-600 text-lg">No hay predios registrados aún.</p>
+        </div>
+      )}
+    </div>
+  )
+}
