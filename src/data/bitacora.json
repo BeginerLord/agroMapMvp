@@ -3,96 +3,64 @@
     "id": "1",
     "predioId": "1",
     "fechaISO": "2024-12-15T08:30:00Z",
-    "actividad": "Siembra de maíz amarillo",
-    "comentario": "Se realizó la siembra de maíz amarillo en 2.5 hectáreas del sector norte del predio. Las condiciones climáticas fueron favorables con humedad adecuada del suelo y temperatura óptima. Se utilizó semilla certificada con alta resistencia a plagas.",
-    "foto": "/placeholder.svg?height=96&width=96&text=Siembra"
+    "actividad": "Siembra de yuca",
+    "comentario": "Se realizó la siembra de yuca en 2.5 hectáreas del sector norte del predio. Las condiciones climáticas fueron favorables, con humedad adecuada del suelo y temperatura óptima. Se utilizó semilla certificada de yuca resistente a plagas.",
+    "foto": "/siembra-de-yuca.jpg?height=96&width=96&text=Siembra"
   },
   {
     "id": "2",
     "predioId": "1",
     "fechaISO": "2024-12-10T14:15:00Z",
     "actividad": "Aplicación de fertilizante orgánico",
-    "comentario": "Aplicación de 500 kg de compost orgánico preparado en la finca durante los últimos 3 meses. El fertilizante se distribuyó uniformemente en toda el área de cultivo utilizando maquinaria especializada para garantizar una cobertura homogénea.",
-    "foto": "/placeholder.svg?height=96&width=96&text=Fertilizante"
+    "comentario": "Aplicación de 500 kg de compost orgánico elaborado en la finca, específicamente formulado para el cultivo de yuca. La distribución fue homogénea para garantizar una nutrición equilibrada en toda el área sembrada.",
+    "foto": "/aplicando-fertilizante.jpg?height=96&width=96&text=Fertilizante"
   },
   {
     "id": "3",
     "predioId": "1",
-    "fechaISO": "2024-12-05T06:45:00Z",
-    "actividad": "Preparación y arado del terreno",
-    "comentario": "Arado profundo y nivelación del terreno para la próxima temporada de siembra. Se removieron completamente las malezas existentes y se preparó el suelo con las condiciones óptimas de aireación y drenaje.",
-    "foto": "/placeholder.svg?height=96&width=96&text=Arado"
+    "fechaISO": "2024-11-28T10:15:00Z",
+    "actividad": "Análisis de suelo",
+    "comentario": "Se tomaron muestras en 8 puntos del predio para evaluar las condiciones del suelo antes de sembrar yuca. Se analizaron pH, niveles de materia orgánica y nutrientes específicos requeridos por el cultivo de yuca.",
+    "foto": "/analisis-suelo.jpg?height=96&width=96&text=Análisis"
   },
   {
     "id": "4",
-    "predioId": "2",
-    "fechaISO": "2024-12-14T07:00:00Z",
-    "actividad": "Cosecha de arroz secano",
-    "comentario": "Inicio de la cosecha de arroz en el lote principal de 4 hectáreas. El rendimiento estimado es de 4.8 toneladas por hectárea, superando las expectativas iniciales. La calidad del grano es excelente con bajo porcentaje de impurezas.",
-    "foto": "/placeholder.svg?height=96&width=96&text=Cosecha"
+    "predioId": "1",
+    "fechaISO": "2024-12-05T06:45:00Z",
+    "actividad": "Preparación y arado del terreno",
+    "comentario": "Se realizó un arado profundo y nivelación del terreno destinado al cultivo de yuca. Se eliminaron malezas y se mejoró la estructura del suelo para una adecuada aireación y drenaje.",
+    "foto": "/preparacion-arado.jpg?height=96&width=96&text=Arado"
   },
   {
     "id": "5",
     "predioId": "2",
-    "fechaISO": "2024-12-08T16:20:00Z",
-    "actividad": "Control biológico de plagas",
-    "comentario": "Aplicación de control biológico utilizando enemigos naturales para el manejo integrado de plagas en el cultivo de arroz. Se liberaron 200 individuos de Trichogramma para control de barrenador del tallo.",
-    "foto": "/placeholder.svg?height=96&width=96&text=Control"
+    "fechaISO": "2024-12-14T07:00:00Z",
+    "actividad": "Cosecha de yuca",
+    "comentario": "Se dio inicio a la cosecha de yuca en el lote principal de 4 hectáreas. El rendimiento estimado fue de 12 toneladas por hectárea, con raíces de buen tamaño y alta calidad, superando las expectativas iniciales.",
+    "foto": "/cosecha-yuca.jpg?height=96&width=96&text=Cosecha"
   },
   {
     "id": "6",
-    "predioId": "3",
-    "fechaISO": "2024-12-12T09:30:00Z",
-    "actividad": "Instalación de riego por goteo",
-    "comentario": "Instalación y prueba del nuevo sistema de riego por goteo en el área destinada a hortalizas. El sistema cubre 1.2 hectáreas y permitirá optimizar el uso del agua en un 40% comparado con el riego tradicional.",
-    "foto": "/placeholder.svg?height=96&width=96&text=Riego"
+    "predioId": "2",
+    "fechaISO": "2024-12-08T16:20:00Z",
+    "actividad": "Control biológico en cultivo de yuca",
+    "comentario": "Se aplicó control biológico utilizando enemigos naturales para el manejo de plagas en el cultivo de yuca. Se liberaron insectos benéficos para combatir mosca blanca y otros insectos dañinos, reduciendo el uso de químicos.",
+    "foto": "/control-biologico.jpg?height=96&width=96&text=Control"
   },
   {
     "id": "7",
-    "predioId": "3",
-    "fechaISO": "2024-12-07T11:45:00Z",
-    "actividad": "Trasplante de plántulas de tomate",
-    "comentario": "Trasplante de 300 plántulas de tomate chonto en el invernadero principal. Las plantas fueron distribuidas en 6 camas de cultivo con espaciamiento de 40cm entre plantas. Se aplicó riego inicial y fertilizante de arranque.",
-    "foto": "/placeholder.svg?height=96&width=96&text=Tomate"
+    "predioId": "2",
+    "fechaISO": "2024-11-25T12:40:00Z",
+    "actividad": "Mantenimiento de canales de riego para yuca",
+    "comentario": "Se realizaron labores de limpieza y reparación de 800 metros lineales de canales de riego en las áreas sembradas con yuca. Se removió sedimento y se repararon compuertas, mejorando la eficiencia del sistema de riego.",
+    "foto": "/mantenimiento-canal.jpg?height=96&width=96&text=Canales"
   },
   {
     "id": "8",
-    "predioId": "4",
-    "fechaISO": "2024-12-11T15:10:00Z",
-    "actividad": "Poda sanitaria de cítricos",
-    "comentario": "Poda de formación y sanitaria en 150 árboles de naranja valencia y limón tahití. Se eliminaron ramas secas, enfermas y con síntomas de plagas. Se aplicó pasta cicatrizante en cortes mayores a 3cm de diámetro.",
-    "foto": "/placeholder.svg?height=96&width=96&text=Poda"
-  },
-  {
-    "id": "9",
-    "predioId": "5",
-    "fechaISO": "2024-12-09T05:30:00Z",
-    "actividad": "Cosecha de plátano hartón",
-    "comentario": "Recolección de 180 racimos de plátano hartón en estado óptimo de madurez. Los racimos fueron seleccionados, pesados y empacados para comercialización en el mercado local. Peso promedio de 18 kg por racimo.",
-    "foto": "/placeholder.svg?height=96&width=96&text=Plátano"
-  },
-  {
-    "id": "10",
-    "predioId": "6",
-    "fechaISO": "2024-12-13T13:25:00Z",
-    "actividad": "Mantenimiento de plantas ornamentales",
-    "comentario": "Cuidado integral de las plantas ornamentales incluyendo poda de formación, aplicación de nutrientes foliares y control de humedad en invernadero. Se realizó inventario de 500 plantas en diferentes etapas de desarrollo.",
-    "foto": "/placeholder.svg?height=96&width=96&text=Flores"
-  },
-  {
-    "id": "11",
-    "predioId": "1",
-    "fechaISO": "2024-11-28T10:15:00Z",
-    "actividad": "Análisis de suelo",
-    "comentario": "Toma de muestras de suelo en 8 puntos diferentes del predio para análisis de pH, materia orgánica y nutrientes. Los resultados permitirán ajustar el plan de fertilización para la próxima temporada.",
-    "foto": "/placeholder.svg?height=96&width=96&text=Análisis"
-  },
-  {
-    "id": "12",
     "predioId": "2",
-    "fechaISO": "2024-11-25T12:40:00Z",
-    "actividad": "Mantenimiento de canales de riego",
-    "comentario": "Limpieza y reparación de 800 metros lineales de canales de riego. Se removió sedimento acumulado y se repararon 3 compuertas que presentaban filtraciones. El sistema quedó funcionando al 100% de su capacidad.",
-    "foto": "/placeholder.svg?height=96&width=96&text=Canales"
+    "fechaISO": "2024-11-20T12:40:00Z",
+    "actividad": "Deshierbe manual en cultivo de yuca",
+    "comentario": "Se realizó el deshierbe manual en las hileras del cultivo de yuca para evitar la competencia por nutrientes y mejorar la aireación del suelo. Esta labor permitió optimizar el desarrollo de las plantas y prevenir enfermedades asociadas a malezas.",
+    "foto": "/deshierbe.jpg?height=96&width=96&text=Deshierbe"
   }
 ]
