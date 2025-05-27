@@ -70,11 +70,6 @@ export default function PredioPage({ params }: PredioPageProps) {
         </Link>
       </div>
 
-      {/* Hero con imagen */}
-      <div className="relative w-full h-64 md:h-96 mb-6 rounded-2xl overflow-hidden shadow-lg">
-        <Image src={predio.imagen || "/placeholder.svg"} alt={predio.nombre} fill className="object-cover" priority />
-        <div className="absolute inset-0 bg-black bg-opacity-20"></div>
-      </div>
 
       {/* Información del predio */}
       <div className="mb-8">

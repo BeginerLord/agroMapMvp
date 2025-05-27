@@ -21,7 +21,7 @@ export default function PrediosPage() {
             nombre={predio.nombre}
             descripcion={predio.descripcion}
             imagen={predio.imagen}
-            ubicacion={predio.ubicacion}
+            imagen2={predio.imagen2}
           />
         ))}
       </div>
