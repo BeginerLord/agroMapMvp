@@ -20,6 +20,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es" className={inter.className}>
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+          integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+          crossOrigin=""
+        />
+      </head>
       <body className="bg-gray-50 text-slate-800 antialiased">
         <Header />
         <main className="mx-auto max-w-7xl p-4">{children}</main>

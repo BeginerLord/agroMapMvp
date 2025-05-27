@@ -3,10 +3,7 @@
     "id": "1",
     "nombre": "Finca El Progreso",
     "descripcion": "Predio dedicado al cultivo de maíz y yuca, con sistema de riego tecnificado y buenas prácticas agrícolas.",
-    "ubicacion": {
-      "lat": 8.8864,
-      "lng": -75.7919
-    },
+    "ubicacion": { "lat": 8.8864, "lng": -75.7919 },
     "imagen": "/placeholder.svg?height=200&width=300",
     "galeria": [
       "/placeholder.svg?height=400&width=300&text=Maíz+creciendo",

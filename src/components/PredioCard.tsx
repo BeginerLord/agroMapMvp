@@ -14,10 +14,8 @@ interface PredioCardProps {
 }
 
 export default function PredioCard({ id, nombre, descripcion, imagen, ubicacion }: PredioCardProps) {
-  // URL para Google Maps Static API con marcador verde
-  const mapUrl = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY
-    ? `https://maps.googleapis.com/maps/api/staticmap?center=${ubicacion.lat},${ubicacion.lng}&zoom=15&size=340x150&markers=color:green%7C${ubicacion.lat},${ubicacion.lng}&key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}`
-    : null
+  // URL para OpenStreetMap estático
+  const mapUrl = `https://staticmap.openstreetmap.de/staticmap.php?center=${ubicacion.lat},${ubicacion.lng}&zoom=15&size=340x150&markers=${ubicacion.lat},${ubicacion.lng},green-pushpin`
 
   return (
     <div className="rounded-2xl bg-white shadow-md hover:shadow-lg transition-shadow duration-300">
@@ -37,7 +35,7 @@ export default function PredioCard({ id, nombre, descripcion, imagen, ubicacion 
         {/* Mapa miniatura */}
         <div className="mb-4">
           <img
-            src={mapUrl || "/placeholder.svg?height=150&width=340&text=Mapa"}
+            src={mapUrl}
             alt={`Ubicación de ${nombre}`}
             className="w-full h-32 object-cover rounded-lg border border-gray-200"
             onError={(e) => {
