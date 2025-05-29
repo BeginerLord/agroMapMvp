@@ -12,7 +12,7 @@ export default function Header() {
           </Link>
 
           <nav className="flex space-x-8">
-            <Link href="/" className="text-slate-600 hover:text-primary transition-colors font-medium">
+            <Link href="/home" className="text-slate-600 hover:text-primary transition-colors font-medium">
               Inicio
             </Link>
             <Link href="/predios" className="text-slate-600 hover:text-primary transition-colors font-medium">

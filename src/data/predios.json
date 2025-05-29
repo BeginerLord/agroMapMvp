@@ -10,9 +10,17 @@
     "imagen": "/martinez4.jpeg?height=512&width=1278",
     "imagen2": "/yuca 1.jpg?height=512&width=1278",
     "galeria": [
-      "/yuca 1.jpg",
-      "/yuca 2.jpg",
-      "/yucamar.jpg"
+      "yuca 1.jpg",
+      "yuca 2.jpg",
+      "yucamar.jpg",
+      "aji.jpg",
+      "aji2.jpg",
+      "aji3.jpg",
+      "aji4.jpg",
+      "veregena1.jpg",
+      "verengena2.jpg",
+      "verengena4.jpg",
+      "verengena5.jpg"
     ]
   },
   {
@@ -28,7 +36,12 @@
     "galeria": [
       "mateo1.jpg",
       "mateo2.jpg",
-      "mateo3.jpg"
+      "mateo3.jpg",
+      "platano1.jpg",
+      "platano2.jpg", 
+      "platano3.jpg",
+      "platano4.jpg",
+      "platano5.jpg"
     ]
   }
 ]
