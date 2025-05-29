@@ -14,9 +14,8 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
-  const resolvedParams = await params;
-  const predio = prediosData.find((p) => p.id === resolvedParams.id);
+export async function generateMetadata({ params }: { params: { id: string } }) {
+  const predio = prediosData.find((p) => p.id === params.id);
 
   if (!predio) {
     return {
@@ -30,16 +29,15 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   };
 }
 
-export default async function PredioPage({ params }: { params: Promise<{ id: string }> }) {
-  const resolvedParams = await params;
-  const predio = prediosData.find((p) => p.id === resolvedParams.id);
+export default async function PredioPage({ params }: { params: { id: string } }) {
+  const predio = prediosData.find((p) => p.id === params.id);
 
   if (!predio) {
     notFound();
   }
 
   const bitacoraPredio = bitacoraData
-    .filter((item) => item.predioId === resolvedParams.id)
+    .filter((item) => item.predioId === params.id)
     .sort((a, b) => new Date(b.fechaISO).getTime() - new Date(a.fechaISO).getTime());
 
   const imagenesGaleria = predio.galeria || [
