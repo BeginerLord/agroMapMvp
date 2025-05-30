@@ -46,7 +46,17 @@ export default function LoginForm() {
     }
 
     return (
-        <div className="fixed inset-0 bg-gray-50 flex items-center justify-center p-4 overflow-hidden z-50">
+        <div
+            className="flex items-center justify-center min-h-screen"
+            // ...existing code...
+            style={{
+                backgroundImage: "url('/gif.gif')",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center",
+                backgroundSize: "100vw 100vh", // Ocupa todo el viewport
+            }}
+        // ...existing code...
+        >
             <div className="w-full max-w-md">
                 {/* Logo y título */}
                 <div className="text-center mb-8">
