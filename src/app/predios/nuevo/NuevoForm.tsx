@@ -1,12 +1,18 @@
 "use client"
 
 import { useState, useActionState } from "react"
+import dynamic from 'next/dynamic'
 import { registrarPredio } from "./actions" // Updated import path
 import { subirImagen, subirImagenPrincipal } from "./upload-actions"
 import BasicButton from "@/components/BasicButton"
 import BasicInput from "@/components/BasicInput"
-import SelectorUbicacion from "@/components/SelectorUbicacion"
 import GestorGaleria from "@/components/GestorGaleria"
+
+// Dynamically import the SelectorUbicacion component with SSR disabled
+const SelectorUbicacion = dynamic(() => import("@/components/SelectorUbicacion"), {
+  ssr: false,
+  loading: () => <div className="p-4 text-center border border-gray-300 rounded-lg">Cargando mapa...</div>
+})
 
 const initialState = {
   success: false,
