@@ -1,5 +1,7 @@
 import PredioCard from "@/components/PredioCard"
 import prediosData from "@/data/predios.json"
+import Link from "next/link"
+import { PlusIcon } from "@heroicons/react/24/outline"
 
 export const metadata = {
   title: "Predios Registrados - AgroMap MVP",
@@ -9,8 +11,15 @@ export const metadata = {
 export default function PrediosPage() {
   return (
     <div className="py-8">
-      {/* Título principal */}
-      <h1 className="text-3xl font-semibold text-primary mb-8 text-center">Predios registrados</h1>
+      {/* Título principal y botón de nuevo predio */}
+      <div className="flex justify-between items-center mb-8">
+        <h1 className="text-3xl font-semibold text-primary">Predios registrados</h1>
+        <Link href="/predios/nuevo" className="bg-primary hover:bg-primary-dark text-white 
+          font-medium px-4 py-2 rounded-md flex items-center gap-2 transition-colors">
+          <PlusIcon className="w-5 h-5" />
+          Nuevo predio
+        </Link>
+      </div>
 
       {/* Grid de predios */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
