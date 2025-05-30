@@ -14,8 +14,10 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({ params }: { params: { id: string } }) {
-  const predio = prediosData.find((p) => p.id === params.id);
+export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+
+  const predio = prediosData.find((p) => p.id === id);
 
   if (!predio) {
     return {
@@ -29,15 +31,17 @@ export async function generateMetadata({ params }: { params: { id: string } }) {
   };
 }
 
-export default async function PredioPage({ params }: { params: { id: string } }) {
-  const predio = prediosData.find((p) => p.id === params.id);
+export default async function PredioPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+
+  const predio = prediosData.find((p) => p.id === id);
 
   if (!predio) {
     notFound();
   }
 
   const bitacoraPredio = bitacoraData
-    .filter((item) => item.predioId === params.id)
+    .filter((item) => item.predioId === id)
     .sort((a, b) => new Date(b.fechaISO).getTime() - new Date(a.fechaISO).getTime());
 
   const imagenesGaleria = predio.galeria || [
