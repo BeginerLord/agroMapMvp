@@ -1,7 +1,8 @@
 import type React from "react"
 import "@/app/globals.css"
 import { Inter } from "next/font/google"
-import Header from "./components/header"
+import ConditionalHeader from "./components/ConditionalHeader"
+
 
 const inter = Inter({
   subsets: ["latin"],
@@ -28,9 +29,9 @@ export default function RootLayout({
           crossOrigin=""
         />
       </head>
-      <body className="bg-gray-50 text-slate-800 antialiased">
-        <Header />
-        <main className="mx-auto max-w-7xl p-4">{children}</main>
+      <body className="">
+        <ConditionalHeader />
+        <main className="">{children}</main>
       </body>
     </html>
   )
