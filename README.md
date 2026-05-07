@@ -14,6 +14,8 @@ pnpm dev
 bun dev
 ```
 
+The development and production servers are configured to run on port 3002.
+
 Open [http://localhost:3002](http://localhost:3002) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
