@@ -28,7 +28,7 @@
     "nombre": " Mateo Gómez",
     "descripcion": "Predio dedicado al cultivo de yuca, con sistema de riego tecnificado y buenas prácticas agrícolas.",
     "ubicacion": {
-      "lat": 8.844100,
+      "lat": 8.8441,
       "lng": -75.830719
     },
     "imagen": "/iconmateo.jpeg",
@@ -38,11 +38,10 @@
       "mateo2.jpg",
       "mateo3.jpg",
       "platano1.jpg",
-      "platano2.jpg", 
+      "platano2.jpg",
       "platano3.jpg",
       "platano4.jpg",
       "platano5.jpg"
     ]
   }
 ]
-

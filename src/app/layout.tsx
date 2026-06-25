@@ -1,17 +1,17 @@
 import type React from "react"
 import "@/app/globals.css"
 import { Inter } from "next/font/google"
-import ConditionalHeader from "./components/ConditionalHeader"
-
+import Header from "./components/header"
 
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
+  variable: "--font-inter",
 })
 
 export const metadata = {
-  title: "AgroMap MVP - Cultivando seguridad alimentaria",
-  description: "Sistema de monitoreo agrícola para el municipio de Cereté",
+  title: "AgroMap-Cereté · Cultivando seguridad alimentaria",
+  description: "Sistema de monitoreo georreferenciado de cultivos periurbanos para la seguridad alimentaria estudiantil en Cereté.",
 }
 
 export default function RootLayout({
@@ -20,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="es" className={inter.className}>
+    <html lang="es" className={inter.variable}>
       <head>
         <link
           rel="stylesheet"
@@ -29,9 +29,11 @@ export default function RootLayout({
           crossOrigin=""
         />
       </head>
-      <body className="">
-        <ConditionalHeader />
-        <main className="">{children}</main>
+      <body className="bg-background min-h-screen">
+        <Header />
+        <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+          {children}
+        </main>
       </body>
     </html>
   )

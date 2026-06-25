@@ -46,10 +46,15 @@ const config: Config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        
-        // Colores extra específicos que tenías en tu configuración original
-        "primary-custom": "#168821",
-        "primary-light": "#34D399",
+        // AgroTech palette
+        "agro-olive": "#7BA05B",
+        "agro-green": "#8FBF6B",
+        "agro-beige": "#F5E6CC",
+        "agro-sand": "#EADBC8",
+        "agro-white": "#FAFAF7",
+        "agro-pastel": "#DDECCF",
+        "agro-yellow": "#F4D35E",
+        "primary-light": "#8FBF6B",
       },
       borderColor: {
         DEFAULT: "hsl(var(--border))",
@@ -60,16 +65,34 @@ const config: Config = {
         lg: "var(--radius)",
         xl: "0.75rem",
         "2xl": "1rem",
+        "3xl": "1.5rem",
         full: "9999px",
       },
       boxShadow: {
-        sm: "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
-        md: "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
-        lg: "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
-        xl: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+        sm: "0 1px 2px 0 rgba(123, 160, 91, 0.08)",
+        md: "0 4px 12px -1px rgba(123, 160, 91, 0.12), 0 2px 6px -1px rgba(0,0,0,0.04)",
+        lg: "0 10px 24px -3px rgba(123, 160, 91, 0.15), 0 4px 8px -2px rgba(0,0,0,0.06)",
+        xl: "0 20px 40px -5px rgba(123, 160, 91, 0.18), 0 10px 12px -5px rgba(0,0,0,0.06)",
+        card: "0 2px 8px 0 rgba(123, 160, 91, 0.10)",
+        "card-hover": "0 8px 24px 0 rgba(123, 160, 91, 0.20)",
       },
       fontFamily: {
-        sans: ["Inter", "Nunito", "ui-sans-serif", "system-ui", "sans-serif"],
+        sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
+        display: ["Poppins", "Inter", "ui-sans-serif", "sans-serif"],
+      },
+      animation: {
+        "fade-in": "fadeIn 0.5s ease-out",
+        "slide-up": "slideUp 0.4s ease-out",
+      },
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+        slideUp: {
+          "0%": { opacity: "0", transform: "translateY(12px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
       },
     },
   },

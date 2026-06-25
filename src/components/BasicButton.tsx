@@ -19,19 +19,18 @@ export default function BasicButton({
   variant = "default",
   className = "",
 }: BasicButtonProps) {
-  const baseClasses =
-    "px-4 py-2 rounded-md font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2"
-  const variantClasses =
-    variant === "outline"
-      ? "border border-gray-300 bg-white text-gray-700 hover:bg-gray-50 focus:ring-blue-500"
-      : "bg-blue-600 text-white hover:bg-blue-700 focus:ring-blue-500"
+  const base = "inline-flex items-center justify-center font-semibold rounded-xl px-6 py-2.5 text-sm transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-agro-olive/50 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed disabled:active:scale-100"
+  const variants = {
+    default: "bg-agro-olive hover:bg-agro-green text-white shadow-sm hover:shadow-md",
+    outline: "border-2 border-agro-olive text-agro-olive hover:bg-agro-pastel bg-transparent",
+  }
 
   return (
     <button
       type={type}
       onClick={onClick}
       disabled={disabled}
-      className={`${baseClasses} ${variantClasses} ${disabled ? "opacity-50 cursor-not-allowed" : ""} ${className}`}
+      className={`${base} ${variants[variant]} ${className}`}
     >
       {children}
     </button>

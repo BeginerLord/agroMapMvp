@@ -9,56 +9,56 @@ interface GaleriaImagenesProps {
   onImageClick?: () => void
 }
 
-export default function GaleriaImagenes({
-  images,
-  onImageClick,
-}: GaleriaImagenesProps) {
+export default function GaleriaImagenes({ images, onImageClick }: GaleriaImagenesProps) {
   const [lightboxOpen, setLightboxOpen] = useState(false)
-  const [currentImageIndex, setCurrentImageIndex] = useState(0)
+  const [currentIndex, setCurrentIndex] = useState(0)
 
   const openLightbox = (index: number) => {
     onImageClick?.()
-    setCurrentImageIndex(index)
+    setCurrentIndex(index)
     setLightboxOpen(true)
   }
 
-  const closeLightbox = () => setLightboxOpen(false)
-  const nextImage = () => setCurrentImageIndex((p) => (p + 1) % images.length)
-  const prevImage = () => setCurrentImageIndex((p) => (p - 1 + images.length) % images.length)
+  const close = () => setLightboxOpen(false)
+  const next = () => setCurrentIndex((p) => (p + 1) % images.length)
+  const prev = () => setCurrentIndex((p) => (p - 1 + images.length) % images.length)
 
-  const handleKeyDown = (e: React.KeyboardEvent) => {
-    if (e.key === "Escape") closeLightbox()
-    if (e.key === "ArrowRight") nextImage()
-    if (e.key === "ArrowLeft") prevImage()
+  const handleKey = (e: React.KeyboardEvent) => {
+    if (e.key === "Escape") close()
+    if (e.key === "ArrowRight") next()
+    if (e.key === "ArrowLeft") prev()
   }
+
+  const src = (img: string) => (img.startsWith("/") ? img : `/${img}`)
 
   if (!images.length) {
     return (
-      <div className="bg-white rounded-2xl p-8 text-center border border-primary-light">
-        <p className="text-slate-600">No hay imágenes disponibles para este predio.</p>
+      <div className="rounded-2xl border border-agro-sand bg-agro-pastel/20 p-10 text-center text-muted-foreground text-sm">
+        No hay imágenes disponibles para este predio.
       </div>
     )
   }
 
   return (
     <>
-      {/* Galería Masonry */}
-      <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4">
+      {/* Grid responsivo */}
+      <div className="columns-2 sm:columns-3 gap-3 space-y-3">
         {images.map((img, idx) => (
           <div
             key={idx}
             className="break-inside-avoid cursor-pointer group"
             onClick={() => openLightbox(idx)}
           >
-            <div className="relative overflow-hidden rounded-2xl bg-white border border-primary-light shadow-sm hover:shadow-md transition-all duration-300">
+            <div className="relative overflow-hidden rounded-xl border border-agro-sand/60 bg-agro-sand/20 shadow-sm hover:shadow-card transition-all duration-300">
               <Image
-                src={img.startsWith("/") ? img : `/${img}`}
+                src={src(img)}
                 alt={`Imagen ${idx + 1}`}
                 width={400}
                 height={300}
-                className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300"
+                className="w-full h-auto object-cover transition-transform duration-400 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300" />
+              {/* Overlay hover */}
+              <div className="absolute inset-0 bg-agro-olive/0 group-hover:bg-agro-olive/10 transition-colors duration-300 rounded-xl" />
             </div>
           </div>
         ))}
@@ -67,58 +67,57 @@ export default function GaleriaImagenes({
       {/* Lightbox */}
       {lightboxOpen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-80 z-50 flex items-center justify-center p-4"
-          onClick={closeLightbox}
-          onKeyDown={handleKeyDown}
+          className="fixed inset-0 bg-black/85 backdrop-blur-sm z-50 flex items-center justify-center p-4"
+          onClick={close}
+          onKeyDown={handleKey}
           tabIndex={0}
         >
+          {/* Cerrar */}
           <button
-            onClick={closeLightbox}
-            className="absolute top-4 right-4 bg-white bg-opacity-20 hover:bg-opacity-30 rounded-full p-2 transition-colors"
+            onClick={close}
+            className="absolute top-4 right-4 bg-white/10 hover:bg-white/20 text-white rounded-full p-2 transition-colors"
           >
-            <XMarkIcon className="w-6 h-6 text-white" />
+            <XMarkIcon className="w-5 h-5" />
           </button>
 
+          {/* Anterior */}
           {images.length > 1 && (
             <button
-              onClick={(e) => { e.stopPropagation(); prevImage() }}
-              className="absolute left-4 bg-white bg-opacity-20 hover:bg-opacity-30 rounded-full p-2 transition-colors"
+              onClick={(e) => { e.stopPropagation(); prev() }}
+              className="absolute left-4 bg-white/10 hover:bg-white/20 text-white rounded-full p-2.5 transition-colors"
             >
-              <ChevronLeftIcon className="w-6 h-6 text-white" />
+              <ChevronLeftIcon className="w-5 h-5" />
             </button>
           )}
 
+          {/* Imagen */}
           <div
-            className="relative max-w-4xl max-h-full"
+            className="relative max-w-5xl max-h-full"
             onClick={(e) => e.stopPropagation()}
           >
             <Image
-              src={
-                images[currentImageIndex].startsWith("/")
-                  ? images[currentImageIndex]
-                  : `/${images[currentImageIndex]}`
-              }
-              alt={`Imagen ${currentImageIndex + 1}`}
-              width={800}
-              height={600}
-              className="max-w-full max-h-[90vh] object-contain rounded-lg"
+              src={src(images[currentIndex])}
+              alt={`Imagen ${currentIndex + 1}`}
+              width={1200}
+              height={900}
+              className="max-w-full max-h-[88vh] object-contain rounded-2xl"
             />
           </div>
 
+          {/* Siguiente */}
           {images.length > 1 && (
             <button
-              onClick={(e) => { e.stopPropagation(); nextImage() }}
-              className="absolute right-4 bg-white bg-opacity-20 hover:bg-opacity-30 rounded-full p-2 transition-colors"
+              onClick={(e) => { e.stopPropagation(); next() }}
+              className="absolute right-4 bg-white/10 hover:bg-white/20 text-white rounded-full p-2.5 transition-colors"
             >
-              <ChevronRightIcon className="w-6 h-6 text-white" />
+              <ChevronRightIcon className="w-5 h-5" />
             </button>
           )}
 
+          {/* Contador */}
           {images.length > 1 && (
-            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-white bg-opacity-20 rounded-full px-3 py-1">
-              <span className="text-white text-sm">
-                {currentImageIndex + 1} / {images.length}
-              </span>
+            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white/10 backdrop-blur-sm text-white text-xs px-3 py-1 rounded-full">
+              {currentIndex + 1} / {images.length}
             </div>
           )}
         </div>

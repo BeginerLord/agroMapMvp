@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Registrar Nuevo Predio - AgroMap MVP",
+  title: "Nuevo Predio · AgroMap-Cereté",
   description: "Formulario para registrar un nuevo predio en el sistema AgroMap",
 }
 
@@ -12,12 +12,17 @@ export interface NuevoPredioData {
   galeria: string[]
 }
 
-import FormWrapper from './FormWrapper'
+import FormWrapper from "./FormWrapper"
 
 export default function NuevoPredioPage() {
   return (
-    <div className="max-w-4xl mx-auto py-8">
-      <h1 className="text-3xl font-semibold text-primary mb-8">Registrar Nuevo Predio</h1>
+    <div className="max-w-3xl mx-auto animate-fade-in">
+      <div className="mb-8">
+        <h1 className="text-3xl font-bold text-foreground">Registrar nuevo predio</h1>
+        <p className="text-muted-foreground mt-1 text-sm">
+          Completa la información del predio agrícola para añadirlo al sistema.
+        </p>
+      </div>
       <FormWrapper />
     </div>
   )
