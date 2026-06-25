@@ -12,6 +12,11 @@ const inter = Inter({
 export const metadata = {
   title: "AgroMap-Cereté · Cultivando seguridad alimentaria",
   description: "Sistema de monitoreo georreferenciado de cultivos periurbanos para la seguridad alimentaria estudiantil en Cereté.",
+  icons: {
+    icon: "/agroMap.svg",
+    shortcut: "/agroMap.svg",
+    apple: "/agroMap.svg",
+  },
 }
 
 export default function RootLayout({
