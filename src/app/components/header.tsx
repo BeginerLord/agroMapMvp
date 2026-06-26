@@ -21,7 +21,7 @@ export default function Header() {
           <Link href="/predios" className="flex items-center gap-2.5 group">
             <div className="w-9 h-9 rounded-xl bg-agro-pastel flex items-center justify-center group-hover:bg-agro-green/30 transition-colors">
               <Image
-                src="/agromap.svg"
+                src="/agroMap.svg"
                 alt="AgroMap Logo"
                 width={24}
                 height={24}

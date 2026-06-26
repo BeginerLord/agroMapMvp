@@ -58,7 +58,7 @@ export default function HomePage() {
         <div className="relative max-w-3xl mx-auto space-y-6">
           <div className="flex justify-center mb-6">
             <div className="w-20 h-20 rounded-2xl bg-white shadow-card flex items-center justify-center">
-              <Image src="/agromap.svg" alt="AgroMap Logo" width={48} height={48} className="w-12 h-12" />
+              <Image src="/agroMap.svg" alt="AgroMap Logo" width={48} height={48} className="w-12 h-12" />
             </div>
           </div>
 
