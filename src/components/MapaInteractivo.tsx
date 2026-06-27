@@ -55,7 +55,7 @@ export default function MapaInteractivo({ lat, lng, nombre }: MapaInteractivoPro
   }, [lat, lng, nombre]);
 
   return (
-    <div className="w-full h-96 rounded-2xl shadow border overflow-hidden">
+    <div className="isolate w-full h-96 rounded-2xl shadow border overflow-hidden">
       <div ref={mapRef} className="w-full h-full"></div>
     </div>
   );

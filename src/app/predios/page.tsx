@@ -51,7 +51,7 @@ export default function PrediosPage() {
     <div className="animate-fade-in space-y-8">
 
       {/* Banner principal */}
-      <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-agro-pastel via-agro-white to-agro-beige px-8 py-10">
+      <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-agro-pastel via-agro-white to-agro-beige px-4 py-6 sm:px-8 sm:py-10">
         <div className="absolute -top-8 -right-8 w-56 h-56 rounded-full bg-agro-green/15 blur-3xl pointer-events-none" />
         <div className="absolute bottom-0 left-1/2 w-40 h-40 rounded-full bg-agro-yellow/15 blur-3xl pointer-events-none" />
 
@@ -79,7 +79,7 @@ export default function PrediosPage() {
         </div>
 
         {/* Stats */}
-        <div className="relative mt-8 grid grid-cols-3 gap-3">
+        <div className="relative mt-8 grid grid-cols-1 sm:grid-cols-3 gap-3">
           {stats.map(({ icon, value, label }) => (
             <div
               key={label}

@@ -142,7 +142,7 @@ export default function EstadisticasDashboard({
     return (
       <div className="animate-fade-in space-y-8">
         {/* Banner */}
-        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-agro-pastel via-agro-white to-agro-beige px-8 py-10">
+        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-agro-pastel via-agro-white to-agro-beige px-4 py-6 sm:px-8 sm:py-10">
           <div className="absolute -top-8 -right-8 w-56 h-56 rounded-full bg-agro-green/15 blur-3xl pointer-events-none" />
           <p className="text-xs font-semibold text-agro-olive uppercase tracking-widest mb-1">
             Monitoreo de cultivos · AgroMap-Cereté
@@ -257,14 +257,14 @@ export default function EstadisticasDashboard({
           Cambiar predio
         </button>
 
-        <div className="flex items-center gap-4">
-          <div className="relative w-14 h-14 rounded-2xl overflow-hidden border border-agro-sand shrink-0">
+        <div className="flex items-center gap-3 min-w-0">
+          <div className="relative w-12 h-12 sm:w-14 sm:h-14 rounded-2xl overflow-hidden border border-agro-sand shrink-0">
             <Image src={predio.imagen || "/placeholder.svg"} alt={predio.nombre} fill className="object-cover" />
           </div>
-          <div>
-            <h1 className="text-2xl font-bold text-foreground">{predio.nombre}</h1>
-            <p className="text-sm text-muted-foreground flex items-center gap-1 mt-0.5">
-              <MapPinIcon className="w-3.5 h-3.5" />
+          <div className="min-w-0">
+            <h1 className="text-xl sm:text-2xl font-bold text-foreground truncate">{predio.nombre}</h1>
+            <p className="text-sm text-muted-foreground flex items-center gap-1 mt-0.5 truncate">
+              <MapPinIcon className="w-3.5 h-3.5 shrink-0" />
               {predio.ubicacion.lat.toFixed(4)}, {predio.ubicacion.lng.toFixed(4)}
             </p>
           </div>

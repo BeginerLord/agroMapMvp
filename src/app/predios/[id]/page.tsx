@@ -187,7 +187,7 @@ export default async function PredioPage({ params }: { params: Promise<{ id: str
 
       {/* Bitácora */}
       <div className="mb-8">
-        <div className="flex items-center justify-between mb-5">
+        <div className="flex flex-col sm:flex-row gap-3 sm:items-center sm:justify-between mb-5">
           <h2 className="text-base font-semibold text-foreground flex items-center gap-2">
             <ClipboardDocumentListIcon className="w-4 h-4 text-agro-olive" />
             Bitácora de actividades

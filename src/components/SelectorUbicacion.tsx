@@ -191,7 +191,7 @@ export default function SelectorUbicacion({ lat, lng, onUbicacionChange }: Selec
       )}
 
       {/* Mapa */}
-      <div className="relative w-full rounded-2xl overflow-hidden border border-agro-sand shadow-sm">
+      <div className="isolate relative w-full rounded-2xl overflow-hidden border border-agro-sand shadow-sm">
         <div ref={mapRef} className="w-full h-72" />
         {/* Hint superpuesto si no hay marker */}
         {isMapReady && !latInput && (

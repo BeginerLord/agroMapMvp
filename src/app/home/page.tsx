@@ -50,7 +50,7 @@ export default function HomePage() {
   return (
     <div className="animate-fade-in">
       {/* Hero */}
-      <section className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-agro-pastel via-agro-white to-agro-beige py-20 px-6 mb-12 text-center">
+      <section className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-agro-pastel via-agro-white to-agro-beige py-12 sm:py-20 px-5 sm:px-6 mb-12 text-center">
         {/* Decorative blobs */}
         <div className="absolute -top-10 -right-10 w-64 h-64 rounded-full bg-agro-green/10 blur-3xl pointer-events-none" />
         <div className="absolute -bottom-10 -left-10 w-48 h-48 rounded-full bg-agro-yellow/20 blur-3xl pointer-events-none" />
@@ -89,7 +89,7 @@ export default function HomePage() {
       </section>
 
       {/* Stats */}
-      <section className="grid grid-cols-3 gap-4 mb-12">
+      <section className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-12">
         {stats.map(({ value, label }) => (
           <div key={label} className="agro-card p-6 text-center">
             <p className="text-2xl md:text-3xl font-bold text-agro-olive">{value}</p>

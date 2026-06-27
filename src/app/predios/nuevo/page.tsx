@@ -18,7 +18,7 @@ export default function NuevoPredioPage() {
   return (
     <div className="max-w-3xl mx-auto animate-fade-in">
       <div className="mb-8">
-        <h1 className="text-3xl font-bold text-foreground">Registrar nuevo predio</h1>
+        <h1 className="text-2xl sm:text-3xl font-bold text-foreground">Registrar nuevo predio</h1>
         <p className="text-muted-foreground mt-1 text-sm">
           Completa la información del predio agrícola para añadirlo al sistema.
         </p>
